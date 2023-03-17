@@ -40,8 +40,8 @@ const Login = () => {
       </div>
       <div className="col-md-1"></div>
       <div className="col-md-4">
-        <h1>Welcome to Nolojia</h1>
-        <p className='text-align: left;'>Don't have an account? <a href="/signup">Sign up</a></p>
+        <h1 className='font-weight: 600; text-align: left;'>Welcome to Nolojia</h1>
+        <p className='signup'>Don't have an account? <a href="/signup">Sign up</a></p>
         <div className="btn-group d-grid gap-5 d-md-flex" role="group" aria-label="Login buttons">
           <button type="button" className="btn btn-primary btn-md rounded">Admin</button>
           <button type="button" className="btn btn-success btn-md rounded">Tutor</button>
@@ -50,7 +50,7 @@ const Login = () => {
         </div>
         <br></br>
         <form onSubmit={handleLogin}>
-          <h4 className='text-align: left;'>Sign in</h4>
+          <h4 className='signin'>Sign in</h4>
           <br></br>
             <div className="input">
                 <input

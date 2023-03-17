@@ -92,3 +92,16 @@
 .input input:required ~ label sup {
     display: inline;
 }
+.signin {
+    text-align: left;
+    font-weight: 600;
+}
+.signup {
+    text-align: left;
+}
+.form-check-label {
+    text-align: left;
+}
+.login{
+    text-align: left;
+}
