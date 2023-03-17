@@ -1,0 +1,107 @@
+* {
+    font-family: sans-serif;
+}
+.input {
+    display: flex;
+    position: relative;
+}
+
+.input input {
+    padding: .3em 0;
+    margin-top: .6em;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid lightslategray;
+    background: transparent;
+}
+
+.input input:focus {
+    border-bottom: 1px solid dodgerblue;
+}
+
+.input input:autofill,
+.input input:-webkit-autofill {
+    transition-property: background-color, color;
+    transition-delay: 2147483647s;
+}
+
+.input button {
+    display: none;
+    border: none;
+    background: transparent;
+    transition: transform .3s;
+}
+
+.input div:hover button {
+    transform: rotateY(180deg);
+}
+
+.input div:hover,
+.input input[type=text][_type=password] ~ div {
+    border-bottom: 1px dashed dodgerblue;
+}
+
+.input div {
+    display: flex;
+    align-content: space-around;
+    border-bottom: 1px dashed lightslategray;
+}
+
+.input input[_type=password] ~ div button {
+    display: block;
+}
+
+.input label {
+    position: absolute;
+    bottom: .3em;
+    transition-property: all;
+    transition-duration: .5s;
+    pointer-events: none;
+}
+
+.input label,
+.input label sup {
+    /* font-style: oblique; */
+    font-weight: lighter;
+}
+
+.input input:focus ~ label,
+.input input:focus ~ label sup,
+.input input:not(:placeholder-shown) ~ label,
+.input input:not(:placeholder-shown) ~ label sup {
+    font: inherit;
+}
+
+.input input:focus ~ label,
+.input input:not(:placeholder-shown) ~ label {
+    bottom: 1.6em;
+    color: dodgerblue;
+    transform: scale(.75);
+    transform-origin: left;
+}
+
+.input label sup {
+    display: none;
+    margin-left: 2px;
+    font-size: .8em;
+    font-weight: bold;
+    color: red;
+}
+
+.input input:required ~ label sup {
+    display: inline;
+}
+.signin {
+    text-align: left;
+    font-weight: 600;
+}
+.signup {
+    text-align: left;
+}
+.form-check-label {
+    text-align: left;
+}
+.login{
+    text-align: left;
+}
