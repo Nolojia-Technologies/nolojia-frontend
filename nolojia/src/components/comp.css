@@ -56,8 +56,30 @@
     cursor: pointer;
 }
 .school_pay_btn {
-    background-color: rgb(9, 185, 62);
+    background-color: rgb(4, 4, 95);
+}
+.school_add_btn {
+    background-color: #f87a04;
 }
 .school_add_btn:hover {
-    background-color: rgb(247, 157, 3);
+    background-color: #484644;
+}
+.add_student_btn_cl {
+    background-color: rgb(4, 4, 95);
+}
+.add_student_btn_cl:hover {
+    background-color: #f87a04;
+}
+.table_school_card {
+    margin-top: 1.3em;
+}
+.mb-3 {
+    margin-top: 2em;
+}
+.search_school_btn {
+    color: #fff;
+    background-color: rgb(4, 4, 95);
+}
+.pagination_school_tb {
+    margin: 0 auto;
 }
