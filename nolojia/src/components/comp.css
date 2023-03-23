@@ -55,3 +55,9 @@
     margin-right: 2em;
     cursor: pointer;
 }
+.school_pay_btn {
+    background-color: rgb(9, 185, 62);
+}
+.school_add_btn:hover {
+    background-color: rgb(247, 157, 3);
+}
