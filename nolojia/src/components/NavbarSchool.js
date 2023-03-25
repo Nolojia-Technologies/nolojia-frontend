@@ -29,7 +29,7 @@ function BasicExample() {
             <Navbar.Text>
                 School Name
             </Navbar.Text>
-            <CiCircleChevDown className='dropdown' size={'1.8em'} >
+            <CiCircleChevDown className='dropdown'  size={'1.8em'} >
                 {/* add a dropdown to go to account settings, logout etc */}
             </CiCircleChevDown>
             

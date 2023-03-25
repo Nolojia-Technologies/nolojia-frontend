@@ -13,7 +13,7 @@ function App() {
     <div className="App">
       {/* <header className="App-header"> */}
         
-        <Tutor />
+        <School />
       {/* </header> */}
     </div>
   );
