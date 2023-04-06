@@ -1,24 +1,39 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Login from './auth/Login';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import NavAdmin from './components/nav/NavAdmin';
+import Dashboard from './admin/Dashboard';
+import NavSchools from './components/nav/NavSchools';
+import NavTutor from './components/nav/NavTutor';
+import MainPageSchools from './schools/MainPageSchools';
+import MainPageTutor from './tutor/MainPageTutor';
+import NavStudents from './components/nav/NavStudents';
+import MainPageStudents from './students/MainPageStudents';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/admin" element={<NavAdmin />}>
+          <Route index element={<Dashboard />} />
+          
+        </Route>
+        <Route path="/schools" element={<NavSchools />}>
+          <Route index element={<MainPageSchools />} />
+          
+        </Route>
+        <Route path="/tutor" element={<NavTutor />}>
+          <Route index element={<MainPageTutor />} />
+          
+        </Route>
+        <Route path="/students" element={<NavStudents />}>
+          <Route index element={<MainPageStudents />} />
+          
+        </Route>
+        <Route path="/" element={<Login/>}/>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
