@@ -1,0 +1,14 @@
+.sidenav{
+    position: absolute;
+    top: 4.5rem;
+    left: 0;
+    width: 20rem;
+    background-color: var(--blue);
+    height: 93.29%;
+}
+.menu-items{
+    margin: 5rem 1rem;
+}
+.sidenav-hidden{
+    display: none;
+}

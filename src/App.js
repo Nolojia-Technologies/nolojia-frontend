@@ -10,6 +10,7 @@ import MainPageSchools from './schools/MainPageSchools';
 import MainPageTutor from './tutor/MainPageTutor';
 import NavStudents from './components/nav/NavStudents';
 import MainPageStudents from './students/MainPageStudents';
+import Tutors from './admin/Tutors';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Routes>
         <Route path="/admin" element={<NavAdmin />}>
           <Route index element={<Dashboard />} />
+          <Route path="tutors" element={<Tutors />} />
           
         </Route>
         <Route path="/schools" element={<NavSchools />}>
