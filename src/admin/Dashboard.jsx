@@ -154,12 +154,57 @@ const Dashboard = () => {
         </div>
       </div>
 
-      {/* Third row */}
-      <div className='admin-row'>
-        <h3>Third Row</h3>
-        <p>This is where you can add more content to your dashboard.</p>
+      {/* Third row  */}
+      <div class="admin-row">
+          <div class="admin-chat">
+            <div class="chat-header">
+              <select class="school-selector">
+                <option selected>Select school</option>
+                <option>School A</option>
+                <option>School B</option>
+                <option>School C</option>
+              </select>
+              <h4>Chat with School</h4>
+            </div>
+            <div class="chat-messages">
+              <div class="message">
+                <p class="message-author">John Doe</p>
+                <p class="message-content">Hey, can you provide me with the latest test scores?</p>
+                <p class="message-timestamp">10:30am</p>
+              </div>
+              <div class="message">
+                <p class="message-author">Jane Smith</p>
+                <p class="message-content">Sure thing! Here they are...</p>
+                <p class="message-timestamp">10:35am</p>
+              </div>
+            </div>
+            <form class="chat-form">
+              <textarea class="chat-input" placeholder="Type your message..."></textarea>
+              <button class="chat-send-button">Send</button>
+            </form>
+          </div>
+          <div class="admin-task">
+            <div class="task-header">
+              <h4>Tasks</h4>
+              <button class="add-task-button">Add Task</button>
+            </div>
+            <div class="task-list">
+              <div class="task">
+                <p class="task-content">Review test scores for School A</p>
+                <button class="task-done-button">Done</button>
+              </div>
+              <div class="task">
+                <p class="task-content">Meet with School B principal</p>
+                <button class="task-done-button">Done</button>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div className="admin-footer">
+        <p>&copy; 2023 Nolojia. All Rights Reserved.</p>
       </div>
     </div>
+    
   )
 }
 
