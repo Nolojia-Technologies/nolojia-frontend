@@ -1,9 +1,171 @@
 .admin-content{
-    margin-left: 22rem;
-    margin-top: 10rem;
+    margin-left: 20rem;
+    margin-top: 2rem;
 }
 @media(max-width:824px){
     .admin-content{
         margin-left: 0;
     }
 }
+.admin-container {
+    margin: 2rem;
+  }
+  
+  .admin-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+  
+  .admin-box {
+    background-color: #0e0c52;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 1.5rem;
+    width: 23%;
+  }
+  .admin-box p{
+    font-size: 35px;
+     color: whitesmoke;
+     font-weight: bold;
+     line-height: 30px;
+     padding-left: 10px;
+     margin-top: 20px;
+     display: inline-block;
+ }
+ .admin-box p span{
+   font-size: 20px;
+   font-weight: 400;
+   color: #e0dddd;
+ }
+ .admin-box .icon{
+   font-size: 40px!important;
+     float: right;
+     margin-top: 35px!important;
+     color: white;
+     padding-right: 10px;
+ }
+  .admin-table {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 1.5rem;
+    width: 58%;
+  }
+  .school-buttons .button{
+    margin-right: 2px;
+  }
+
+  .admin-pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  .admin-chart {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 1rem;
+    margin-top: 2rem;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.admin-chart h2 {
+margin: 0;
+font-size: 1.5rem;
+font-weight: 600;
+padding: 0.5rem;
+}
+
+.admin-chart img {
+max-width: 100%;
+max-height: 100%;
+}
+
+.admin-table {
+margin-top: 2rem;
+}
+
+.admin-table table {
+border-collapse: collapse;
+width: 100%;
+}
+
+.admin-table th,
+.admin-table td {
+padding: 0.75rem;
+text-align: left;
+border: 1px solid #ddd;
+}
+
+.admin-table th {
+background-color: #f2f2f2;
+font-weight: 600;
+}
+
+.admin-table tr:nth-child(even) {
+background-color: #f2f2f2;
+}
+
+.admin-table tr:hover {
+background-color: #ddd;
+}
+
+.admin-pagination {
+display: flex;
+justify-content: flex-end;
+margin-top: 1rem;
+}
+
+.admin-pagination button {
+margin-left: 0.5rem;
+padding: 0.25rem 0.5rem;
+border: none;
+background-color: #fff;
+color: #333;
+cursor: pointer;
+}
+
+.admin-pagination button:hover {
+background-color: #ccc;
+color: #fff;
+}
+
+.admin-suggestions {
+margin-top: 2rem;
+}
+
+.admin-suggestions h2 {
+font-size: 1.5rem;
+font-weight: 600;
+margin-bottom: 1rem;
+}
+
+.admin-suggestions ul {
+margin: 0;
+padding: 0;
+}
+
+.admin-suggestions li {
+list-style: none;
+margin-bottom: 0.5rem;
+}
+
+.admin-suggestions li a {
+color: #333;
+text-decoration: none;
+font-size: 1.2rem;
+}
+.admin-suggestions li a:hover {
+    color: #555;
+    text-decoration: underline;
+    }
+
+.admin-suggestions li p {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #555;
+    }
